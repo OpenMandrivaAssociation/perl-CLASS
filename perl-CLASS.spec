@@ -1,7 +1,7 @@
 %define upstream_name    CLASS
 Name:		perl-%{upstream_name}
-Version:	1.00
-Release:	6
+Version:	1.1.8
+Release:	1
 
 Summary:	Alias for __PACKAGE__
 License:	GPL+ or Artistic
@@ -20,7 +20,7 @@ CLASS and $CLASS are both synonyms for __PACKAGE__. Easier to type.
 $CLASS has the additional benefit of working in strings.
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n CLASS-v1.1.8
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
